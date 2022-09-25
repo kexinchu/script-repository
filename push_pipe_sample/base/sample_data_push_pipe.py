@@ -16,7 +16,7 @@ from  conf.bigpipe_config import SAMPLE_PUSH_BIGSEARCH_CONGIF  as bigpipe_config
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-class Top1DataPushPipe(object):
+class SampleDataPushPipe(object):
     def __init__(self, env):
         self.bigpipe_conf = bigpipe_config[env["bp_env"]]
         self.bns = bns.BNS(self.bigpipe_conf["webservice"])
